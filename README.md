@@ -9,3 +9,5 @@ Python 2.7
 3. 第44行設定目標金額  
 4. 發大財
 
+### BitoPro 官方活動說明
+https://www.bitopro.com/landing_pages/trading_competition
