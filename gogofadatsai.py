@@ -14,7 +14,7 @@ def public(url):
     
 def order(action,amount,price):
     baseUrl = "https://api.bitopro.com/v2"
-    url="/orders/"+ pair
+    url="/orders/"+ PAIR
     nonce = int(time.time() * 1000)
     completeURL = baseUrl + url
     body = {
