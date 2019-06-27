@@ -41,7 +41,7 @@ if __name__ == '__main__':
     API_SECRET = ""
     PAIR = "btc_twd"
     AMOUNT = float(0.0025) #BTC amount limit
-    TARGER_VOLUME = 100000
+    TARGER_VOLUME = 10000000
     ###########################################################################    
     order_book = public("/order-book/"+ PAIR)
     current_ask_price = order_book['asks'][0]['price']
@@ -54,7 +54,6 @@ if __name__ == '__main__':
     print "Lart Price: " + last_price
     print "-----------------------------------------"
     count = int(round(TARGER_VOLUME / (AMOUNT * float(last_price))) / 2)
-    print count
     for i in range(count):
         order_book = public("/order-book/" + PAIR )
         current_ask_price = order_book['asks'][0]['price']
